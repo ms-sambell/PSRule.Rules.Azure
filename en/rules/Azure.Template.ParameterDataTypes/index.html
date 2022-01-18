@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Template.ParameterDataTypes/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.edf004c2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -348,6 +348,8 @@
       
       
       
+        
+          
         
           
         
@@ -723,26 +725,44 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../related-projects/" class="md-nav__link">
+        Related projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
       
       
       
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_9">
+        <label class="md-nav__link" for="__nav_2_10">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_9">
+        <label class="md-nav__title" for="__nav_2_10">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -757,7 +777,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_1" type="checkbox" id="__nav_2_9_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
       
       
       
@@ -768,13 +788,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_9_1">
+        <label class="md-nav__link" for="__nav_2_10_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_9_1">
+        <label class="md-nav__title" for="__nav_2_10_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -810,6 +830,34 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../upgrade-notes/" class="md-nav__link">
+        Upgrade notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deprecations/" class="md-nav__link">
+        Deprecations
+      </a>
     </li>
   
 
@@ -1041,6 +1089,8 @@
       
       
       
+        
+          
         
           
         
@@ -2124,6 +2174,20 @@
     <li class="md-nav__item">
       <a href="../Azure.APIM.CertificateExpiry/" class="md-nav__link">
         Azure.APIM.CertificateExpiry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.APIM.Ciphers/" class="md-nav__link">
+        Azure.APIM.Ciphers
       </a>
     </li>
   
@@ -5561,31 +5625,31 @@
 </ul>
 <p>When including a <code>defaultValue</code>, the default value should match the same type at the <code>type</code> property.
 For example:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;boolParam&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;bool&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span> <span class="kc">false</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;intParam&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;int&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span> <span class="mi">5</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;stringParam&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span> <span class="s2">&quot;test-rg&quot;</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;arrayParam&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> <span class="p">]</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;objectParam&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;one&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;two&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span>
-      <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;boolParam&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bool&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;intParam&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;stringParam&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test-rg&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;arrayParam&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;objectParam&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;defaultValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;one&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;two&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h2 id="recommendation">Recommendation<a class="headerlink" href="#recommendation" title="Permanent link">#</a></h2>
 <p>Consider updating the parameter default value to a value of the same type.</p>
@@ -5603,7 +5667,7 @@ For example:</p>
   <small>
     
       Last update:
-      2021-12-26
+      2022-01-18
     
   </small>
 </div>
@@ -5651,10 +5715,10 @@ For example:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>

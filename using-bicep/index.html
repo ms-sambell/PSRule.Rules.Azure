@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/using-bicep/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.edf004c2.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.cd566b2a.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -350,6 +350,8 @@
       
       
       
+        
+          
         
           
         
@@ -808,26 +810,44 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../related-projects/" class="md-nav__link">
+        Related projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
       
       
       
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_9">
+        <label class="md-nav__link" for="__nav_2_10">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_9">
+        <label class="md-nav__title" for="__nav_2_10">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -842,7 +862,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_1" type="checkbox" id="__nav_2_9_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
       
       
       
@@ -853,13 +873,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_9_1">
+        <label class="md-nav__link" for="__nav_2_10_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_9_1">
+        <label class="md-nav__title" for="__nav_2_10_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -895,6 +915,34 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade-notes/" class="md-nav__link">
+        Upgrade notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deprecations/" class="md-nav__link">
+        Deprecations
+      </a>
     </li>
   
 
@@ -1122,6 +1170,8 @@
       
       
       
+        
+          
         
           
         
@@ -2205,6 +2255,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.APIM.CertificateExpiry/" class="md-nav__link">
         Azure.APIM.CertificateExpiry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.APIM.Ciphers/" class="md-nav__link">
+        Azure.APIM.Ciphers
       </a>
     </li>
   
@@ -5590,12 +5654,6 @@ To enable this feature, you need to:</p>
 </ul>
 </li>
 </ul>
-<div class="admonition experimental">
-<p class="admonition-title">Experimental</p>
-<p>Support for Bicep source files is currently an experimental feature.
-It is not recommended for production use.
-Please give us <a href="https://github.com/Azure/PSRule.Rules.Azure/discussions">feedback</a> on this feature and report any <a href="https://github.com/Azure/PSRule.Rules.Azure/issues">issues</a> you encounter.</p>
-</div>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
 <p>This topic covers how you can validate Azure resources within <code>.bicep</code> files.
@@ -5603,9 +5661,9 @@ To learn more about why this is important see <a href="../expanding-source-files
 </div>
 <h2 id="enablingexpansion">Enabling expansion<a class="headerlink" href="#enablingexpansion" title="Permanent link">#</a></h2>
 <p>To expand Bicep deployments configure <code>ps-rule.yaml</code> with the <code>AZURE_BICEP_FILE_EXPANSION</code> option.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># YAML: Enable expansion for Bicep source files.</span>
-<span class="nt">configuration</span><span class="p">:</span>
-  <span class="nt">AZURE_BICEP_FILE_EXPANSION</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># YAML: Enable expansion for Bicep source files.</span><span class="w"></span>
+<span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">AZURE_BICEP_FILE_EXPANSION</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
 <h3 id="setupbicep">Setup Bicep<a class="headerlink" href="#setupbicep" title="Permanent link">#</a></h3>
 <p>To expand Azure resources for analysis from Bicep source files the Bicep CLI is required.
@@ -5667,21 +5725,21 @@ Instead expand resources from deployments or tests.</p>
 <p>To do this configure <code>ps-rule.yaml</code> with the <code>input.pathIgnore</code> option.</p>
 <div class="admonition example">
 <p class="admonition-title">Example <code>ps-rule.yaml</code></p>
-<div class="highlight"><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span>
-  <span class="c1"># Enable expansion for Bicep source files.</span>
-  <span class="nt">AZURE_BICEP_FILE_EXPANSION</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<div class="highlight"><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Enable expansion for Bicep source files.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">AZURE_BICEP_FILE_EXPANSION</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 
-<span class="nt">input</span><span class="p">:</span>
-  <span class="nt">pathIgnore</span><span class="p">:</span>
-  <span class="c1"># Exclude module files</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;modules/**/*.bicep&#39;</span>
-  <span class="c1"># Include test files from modules</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;!modules/**/*.tests.bicep&#39;</span>
+<span class="nt">input</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">pathIgnore</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Exclude module files</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;modules/**/*.bicep&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Include test files from modules</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;!modules/**/*.tests.bicep&#39;</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In this examplem, Bicep files such as <code>deploy.bicep</code> in other directories will be expanded.</p>
+<p>In this example, Bicep files such as <code>deploy.bicep</code> in other directories will be expanded.</p>
 </div>
 
   <hr>
@@ -5689,7 +5747,7 @@ Instead expand resources from deployments or tests.</p>
   <small>
     
       Last update:
-      2021-12-26
+      2022-01-18
     
   </small>
 </div>
@@ -5771,10 +5829,10 @@ Instead expand resources from deployments or tests.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      <script src="../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>

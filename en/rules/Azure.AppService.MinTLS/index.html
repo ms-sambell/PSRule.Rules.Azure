@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.AppService.MinTLS/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.edf004c2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -348,6 +348,8 @@
       
       
       
+        
+          
         
           
         
@@ -723,26 +725,44 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../related-projects/" class="md-nav__link">
+        Related projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
       
       
       
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_9">
+        <label class="md-nav__link" for="__nav_2_10">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_9">
+        <label class="md-nav__title" for="__nav_2_10">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -757,7 +777,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_1" type="checkbox" id="__nav_2_9_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
       
       
       
@@ -768,13 +788,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_9_1">
+        <label class="md-nav__link" for="__nav_2_10_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_9_1">
+        <label class="md-nav__title" for="__nav_2_10_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -810,6 +830,34 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../upgrade-notes/" class="md-nav__link">
+        Upgrade notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deprecations/" class="md-nav__link">
+        Deprecations
+      </a>
     </li>
   
 
@@ -1041,6 +1089,8 @@
       
       
       
+        
+          
         
           
         
@@ -2136,6 +2186,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../Azure.APIM.Ciphers/" class="md-nav__link">
+        Azure.APIM.Ciphers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Azure.APIM.EncryptValues/" class="md-nav__link">
         Azure.APIM.EncryptValues
       </a>
@@ -2614,6 +2678,33 @@
   <a href="#recommendation" class="md-nav__link">
     Recommendation
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurewithazuretemplate" class="md-nav__link">
+    Configure with Azure template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurewithbicep" class="md-nav__link">
+    Configure with Bicep
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5504,6 +5595,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurewithazuretemplate" class="md-nav__link">
+    Configure with Azure template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurewithbicep" class="md-nav__link">
+    Configure with Bicep
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     Links
   </a>
@@ -5556,12 +5674,67 @@ By default, a minimum of TLS 1.2 is enforced.</p>
 <h2 id="recommendation">Recommendation<a class="headerlink" href="#recommendation" title="Permanent link">#</a></h2>
 <p>Consider configuring the minimum supported TLS version to be 1.2.
 Also consider using Azure Policy to audit or enforce this configuration.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
+<h3 id="configurewithazuretemplate">Configure with Azure template<a class="headerlink" href="#configurewithazuretemplate" title="Permanent link">#</a></h3>
+<p>To deploy App Services that pass this rule:</p>
+<ul>
+<li>Set <code>properties.siteConfig.minTlsVersion</code> to <code>1.2</code>.</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.Web/sites&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;apiVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-02-01&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;name&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;location&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;web&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;serverFarmId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[resourceId(&#39;Microsoft.Web/serverfarms&#39;, parameters(&#39;planName&#39;))]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;httpsOnly&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;siteConfig&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;alwaysOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;minTlsVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;ftpsState&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FtpsOnly&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;remoteDebuggingEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;http20Enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;tags&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dependsOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;[resourceId(&#39;Microsoft.Web/serverfarms&#39;, parameters(&#39;planName&#39;))]&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="configurewithbicep">Configure with Bicep<a class="headerlink" href="#configurewithbicep" title="Permanent link">#</a></h3>
+<p>To deploy App Services that pass this rule:</p>
+<ul>
+<li>Set <code>properties.siteConfig.minTlsVersion</code> to <code>1.2</code>.</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>resource webApp &#39;Microsoft.Web/sites@2021-02-01&#39; = {
+  name: name
+  location: location
+  kind: &#39;web&#39;
+  properties: {
+    serverFarmId: appPlan.id
+    httpsOnly: true
+    siteConfig: {
+      alwaysOn: true
+      minTlsVersion: &#39;1.2&#39;
+      ftpsState: &#39;FtpsOnly&#39;
+      remoteDebuggingEnabled: false
+      http20Enabled: true
+    }
+  }
+  tags: tags
+}
+</code></pre></div>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="https://docs.microsoft.com/azure/architecture/framework/security/design-storage-encryption#data-in-transit">Data encryption in Azure</a></li>
 <li><a href="https://docs.microsoft.com/azure/app-service/configure-ssl-bindings#enforce-tls-versions">Enforce TLS versions</a></li>
 <li><a href="https://azure.microsoft.com/updates/azuretls12/">Preparing for TLS 1.2 in Microsoft Azure</a></li>
 <li><a href="https://docs.microsoft.com/Azure/app-service/overview-security#insecure-protocols-http-tls-10-ftp">Insecure protocols</a></li>
+<li><a href="https://docs.microsoft.com/azure/app-service/policy-reference">Azure Policy built-in definitions for Azure App Service</a></li>
 <li><a href="https://docs.microsoft.com/azure/templates/microsoft.web/sites#siteconfig-object">Azure template reference</a></li>
 </ul>
 
@@ -5573,7 +5746,7 @@ Also consider using Azure Policy to audit or enforce this configuration.</p>
   <small>
     
       Last update:
-      2021-12-26
+      2022-01-18
     
   </small>
 </div>
@@ -5621,10 +5794,10 @@ Also consider using Azure Policy to audit or enforce this configuration.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>

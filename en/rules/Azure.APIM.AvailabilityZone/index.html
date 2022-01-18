@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.APIM.AvailabilityZone/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.edf004c2.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cd566b2a.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -348,6 +348,8 @@
       
       
       
+        
+          
         
           
         
@@ -723,26 +725,44 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../related-projects/" class="md-nav__link">
+        Related projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
       
       
       
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_9">
+        <label class="md-nav__link" for="__nav_2_10">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_9">
+        <label class="md-nav__title" for="__nav_2_10">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -757,7 +777,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_1" type="checkbox" id="__nav_2_9_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
       
       
       
@@ -768,13 +788,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_9_1">
+        <label class="md-nav__link" for="__nav_2_10_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_9_1">
+        <label class="md-nav__title" for="__nav_2_10_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -810,6 +830,34 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../upgrade-notes/" class="md-nav__link">
+        Upgrade notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deprecations/" class="md-nav__link">
+        Deprecations
+      </a>
     </li>
   
 
@@ -1041,6 +1089,8 @@
       
       
       
+        
+          
         
           
         
@@ -2213,6 +2263,20 @@
     <li class="md-nav__item">
       <a href="../Azure.APIM.CertificateExpiry/" class="md-nav__link">
         Azure.APIM.CertificateExpiry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.APIM.Ciphers/" class="md-nav__link">
+        Azure.APIM.Ciphers
       </a>
     </li>
   
@@ -5625,9 +5689,9 @@ With zone redundancy, the gateway and the control plane of your API Management i
 <p>This rule applies when analyzing resources deployed to Azure using <em>pre-flight</em> and <em>in-flight</em> data.</p>
 <p>This rule fails when <code>"zones"</code> is <code>null</code>, <code>[]</code> or less than two zones when API management service is deployed with Premium SKU and there are supported availability zones for the given region.</p>
 <p>Configure <code>AZURE_APIM_ADDITIONAL_REGION_AVAILABILITY_ZONE_LIST</code> to set additional availability zones that need to be supported which are not in the existing <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/data/providers.json">providers</a> for namespace <code>Microsoft.ApiManagement</code> and resource type <code>services</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># YAML: The default AZURE_APIM_ADDITIONAL_REGION_AVAILABILITY_ZONE_LIST configuration option</span>
-<span class="nt">configuration</span><span class="p">:</span>
-  <span class="nt">AZURE_APIM_ADDITIONAL_REGION_AVAILABILITY_ZONE_LIST</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># YAML: The default AZURE_APIM_ADDITIONAL_REGION_AVAILABILITY_ZONE_LIST configuration option</span><span class="w"></span>
+<span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">AZURE_APIM_ADDITIONAL_REGION_AVAILABILITY_ZONE_LIST</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w"></span>
 </code></pre></div>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
 <h3 id="configurewithazuretemplate">Configure with Azure template<a class="headerlink" href="#configurewithazuretemplate" title="Permanent link">#</a></h3>
@@ -5638,63 +5702,63 @@ With zone redundancy, the gateway and the control plane of your API Management i
 <li>Set <code>sku.name</code> and/or <code>properties.additionalLocations[*].sku.name</code> to <code>Premium</code>.</li>
 </ul>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Microsoft.ApiManagement/service&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;apiVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-01-01-preview&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;[parameters(&#39;service_api_mgmt_test2_name&#39;)]&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;Australia East&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Premium&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;capacity&quot;</span><span class="p">:</span> <span class="mi">3</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;zones&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;2&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;3&quot;</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;publisherEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;john.doe@contoso.com&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;publisherName&quot;</span><span class="p">:</span> <span class="s2">&quot;contoso&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;notificationSenderEmail&quot;</span><span class="p">:</span> <span class="s2">&quot;apimgmt-noreply@mail.windowsazure.com&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;hostnameConfigurations&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Proxy&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;hostName&quot;</span><span class="p">:</span> <span class="s2">&quot;[concat(parameters(&#39;service_api_mgmt_test2_name&#39;), &#39;.azure-api.net&#39;)]&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;negotiateClientCertificate&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nt">&quot;defaultSslBinding&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;certificateSource&quot;</span><span class="p">:</span> <span class="s2">&quot;BuiltIn&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;additionalLocations&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;location&quot;</span><span class="p">:</span> <span class="s2">&quot;East US&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Premium&quot;</span><span class="p">,</span>
-                    <span class="nt">&quot;capacity&quot;</span><span class="p">:</span> <span class="mi">3</span>
-                <span class="p">},</span>
-                <span class="nt">&quot;zones&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;2&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;3&quot;</span>
-                <span class="p">],</span>
-                <span class="nt">&quot;disableGateway&quot;</span><span class="p">:</span> <span class="kc">false</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;customProperties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TripleDes168&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls11&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls10&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Ssl30&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls11&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls10&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Ssl30&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Protocols.Server.Http2&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;virtualNetworkType&quot;</span><span class="p">:</span> <span class="s2">&quot;None&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;disableGateway&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;apiVersionConstraint&quot;</span><span class="p">:</span> <span class="p">{}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.ApiManagement/service&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;apiVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-01-01-preview&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;service_api_mgmt_test2_name&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Australia East&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Premium&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;capacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;zones&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;3&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;publisherEmail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@contoso.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;publisherName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;contoso&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;notificationSenderEmail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;apimgmt-noreply@mail.windowsazure.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;hostnameConfigurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Proxy&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;hostName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[concat(parameters(&#39;service_api_mgmt_test2_name&#39;), &#39;.azure-api.net&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;negotiateClientCertificate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;defaultSslBinding&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;certificateSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BuiltIn&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;additionalLocations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;East US&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Premium&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;capacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="w">                </span><span class="p">},</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;zones&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                    </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="s2">&quot;2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="s2">&quot;3&quot;</span><span class="w"></span>
+<span class="w">                </span><span class="p">],</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;disableGateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;customProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Ciphers.TripleDes168&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls11&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Tls10&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Protocols.Ssl30&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls11&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Tls10&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Security.Backend.Protocols.Ssl30&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Microsoft.WindowsAzure.ApiManagement.Gateway.Protocols.Server.Http2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;virtualNetworkType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;None&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;disableGateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;apiVersionConstraint&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h3 id="configurewithbicep">Configure with Bicep<a class="headerlink" href="#configurewithbicep" title="Permanent link">#</a></h3>
 <p>To set availability zones for a API management service</p>
@@ -5773,7 +5837,7 @@ With zone redundancy, the gateway and the control plane of your API Management i
   <small>
     
       Last update:
-      2021-12-26
+      2022-01-18
     
   </small>
 </div>
@@ -5821,10 +5885,10 @@ With zone redundancy, the gateway and the control plane of your API Management i
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>
