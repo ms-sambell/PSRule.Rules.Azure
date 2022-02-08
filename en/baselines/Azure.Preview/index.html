@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.Preview/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6e60f8b8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d6be258b.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -1156,6 +1156,8 @@
       
       
       
+        
+          
         
           
         
@@ -3951,6 +3953,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../rules/Azure.RSV.ReplicationAlert/" class="md-nav__link">
+        Azure.RSV.ReplicationAlert
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../rules/Azure.RSV.StorageType/" class="md-nav__link">
         Azure.RSV.StorageType
       </a>
@@ -5785,7 +5801,7 @@
 <h1 id="azurepreview">Azure.Preview<a class="headerlink" href="#azurepreview" title="Permanent link">#</a></h1>
 <p>Includes rules for Azure GA and preview features.</p>
 <h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">#</a></h2>
-<p>The following rules are included within <code>Azure.Preview</code>. This baseline includes a total of 266 rules.</p>
+<p>The following rules are included within <code>Azure.Preview</code>. This baseline includes a total of 268 rules.</p>
 <table>
 <thead>
 <tr>
@@ -6646,6 +6662,16 @@
 <td>Awareness</td>
 </tr>
 <tr>
+<td><a href="../../rules/Azure.RSV.ReplicationAlert/">Azure.RSV.ReplicationAlert</a></td>
+<td>Recovery Services Vaults (RSV) without replication alerts configured may be at risk.</td>
+<td>Important</td>
+</tr>
+<tr>
+<td><a href="../../rules/Azure.RSV.StorageType/">Azure.RSV.StorageType</a></td>
+<td>Recovery Services Vaults (RSV) not using geo-replicated storage (GRS) may be at risk.</td>
+<td>Important</td>
+</tr>
+<tr>
 <td><a href="../../rules/Azure.Search.IndexSLA/">Azure.Search.IndexSLA</a></td>
 <td>Use a minimum of 3 replicas to receive an SLA for query and index updates.</td>
 <td>Important</td>
@@ -7037,7 +7063,7 @@
 </tr>
 <tr>
 <td><a href="../../rules/Azure.VM.UseHybridUseBenefit/">Azure.VM.UseHybridUseBenefit</a></td>
-<td>Use Hybrid Use Benefit (HUB) for applicable virtual machine (VM) workloads.</td>
+<td>Use Azure Hybrid Benefit for applicable virtual machine (VM) workloads.</td>
 <td>Awareness</td>
 </tr>
 <tr>
@@ -7136,7 +7162,7 @@
   <small>
     
       Last update:
-      2022-01-27
+      2022-02-08
     
   </small>
 </div>
@@ -7184,10 +7210,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.092fa1f6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.960e086b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
     
   </body>
