@@ -488,5 +488,25 @@
                 "ETag": null
             }
         ]
+    },
+    {
+        "Name": "server-D",
+        "ResourceId": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test-rg/providers/Microsoft.Sql/servers/server-D",
+        "ResourceName": "server-D",
+        "ResourceType": "Microsoft.Sql/servers",
+        "Kind": "v12.0",
+        "ResourceGroupName": "test-rg",
+        "Location": "region",
+        "SubscriptionId": "00000000-0000-0000-0000-000000000000",
+        "Tags": null,
+        "Properties": {
+            "version": "12.0",
+            "minimalTlsVersion": "1.2",
+            "publicNetworkAccess": "Disabled",
+            "administrators": {
+                "administratorType": "ActiveDirectory",
+                "azureADOnlyAuthentication": true
+            }
+        }
     }
 ]

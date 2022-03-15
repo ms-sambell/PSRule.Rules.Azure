@@ -55,13 +55,22 @@ Rule 'Azure.SQL.Auditing' -Type 'Microsoft.Sql/servers' -Tag @{ release = 'GA'; 
 }
 
 # Synopsis: Use Azure AD administrators
-Rule 'Azure.SQL.AAD' -Type 'Microsoft.Sql/servers' -Tag @{ release = 'GA'; ruleSet = '2020_06' } {
-    $configs = @(GetSubResources -ResourceType 'Microsoft.Sql/servers/administrators');
-    if ($configs.Length -eq 0) {
+Rule 'Azure.SQL.AAD' -Type 'Microsoft.Sql/servers', 'Microsoft.Sql/servers/administrators' -Tag @{ release = 'GA'; ruleSet = '2020_06' } {
+    $sqlConfigs = @($TargetObject);
+
+    if ($PSRule.TargetType -eq 'Microsoft.Sql/servers') {
+        $sqlConfigs = @(GetSubResources -ResourceType 'Microsoft.Sql/servers/administrators');
+    }
+
+    if ($sqlConfigs.Length -eq 0) {
         return $Assert.Fail($LocalizedData.SubResourceNotFound, 'Microsoft.Sql/servers/administrators');
     }
-    foreach ($config in $configs) {
-        $Assert.HasFieldValue($config, 'Properties.administratorType', 'ActiveDirectory');
+    
+    foreach ($config in $sqlConfigs) {
+        $Assert.AnyOf(
+            $Assert.HasFieldValue($config, 'Properties.administratorType', 'ActiveDirectory'),
+            $Assert.HasFieldValue($config, 'Properties.administrators.administratorType', 'ActiveDirectory')
+        )
     }
 }
 

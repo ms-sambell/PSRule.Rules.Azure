@@ -51,8 +51,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Pass
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Pass' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 2;
-            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-C';
+            $ruleResult.Length | Should -Be 3;
+            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-C', 'Server-D';
         }
 
         It 'Azure.SQL.AllowAzureAccess' {
@@ -67,8 +67,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Pass
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Pass' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 2;
-            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-C';
+            $ruleResult.Length | Should -Be 3;
+            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-C', 'server-D';
         }
 
         It 'Azure.SQL.FirewallIPRange' {
@@ -86,8 +86,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Pass
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Pass' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 2;
-            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-C';
+            $ruleResult.Length | Should -Be 3;
+            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-C', 'server-D';
         }
 
         It 'Azure.SQL.ThreatDetection' {
@@ -96,8 +96,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Fail
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Fail' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 2;
-            $ruleResult.TargetName | Should -Be 'server-B', 'server-C';
+            $ruleResult.Length | Should -Be 3;
+            $ruleResult.TargetName | Should -Be 'server-B', 'server-C', 'server-D';
 
             $ruleResult[0].Reason | Should -Not -BeNullOrEmpty;
             $ruleResult[0].Reason | Should -BeExactly 'A sub-resource of type ''Microsoft.Sql/servers/securityAlertPolicies'' has not been specified.';
@@ -117,8 +117,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Fail
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Fail' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 2;
-            $ruleResult.TargetName | Should -Be 'server-B', 'server-C';
+            $ruleResult.Length | Should -Be 3;
+            $ruleResult.TargetName | Should -Be 'server-B', 'server-C', 'server-d';
 
             $ruleResult[0].Reason | Should -Not -BeNullOrEmpty;
             $ruleResult[0].Reason | Should -BeExactly 'A sub-resource of type ''Microsoft.Sql/servers/auditingSettings'' has not been specified.';
@@ -138,6 +138,7 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Fail
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Fail' });
             $ruleResult | Should -Not -BeNullOrEmpty;
+            write-host $ruleResult.TargetName
             $ruleResult.Length | Should -Be 2;
             $ruleResult.TargetName | Should -BeIn 'server-B', 'server-C';
 
@@ -149,8 +150,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Pass
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Pass' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 1;
-            $ruleResult.TargetName | Should -Be 'server-A';
+            $ruleResult.Length | Should -Be 2;
+            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-D';
         }
 
         It 'Azure.SQL.MinTLS' {
@@ -165,8 +166,8 @@ Describe 'Azure.SQL' -Tag 'SQL' {
             # Pass
             $ruleResult = @($filteredResult | Where-Object { $_.Outcome -eq 'Pass' });
             $ruleResult | Should -Not -BeNullOrEmpty;
-            $ruleResult.Length | Should -Be 1;
-            $ruleResult.TargetName | Should -Be 'server-A';
+            $ruleResult.Length | Should -Be 2;
+            $ruleResult.TargetName | Should -BeIn 'server-A', 'server-D';
         }
 
         It 'Azure.SQL.TDE' {
