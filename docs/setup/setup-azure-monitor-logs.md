@@ -189,10 +189,12 @@ PSRule_CL
 | summarize Pass=countif(Outcome_s == "Pass"), Fail=countif(Outcome_s  == "Fail") by RunId_s
 ```
 
-*[SIEM]: security information event management
-
 ### Querying The Data
 
-Once the results have been published to the Log Analytics workspace, they can be queried by executing
-results against the `PSRule_CL` table (under Custom Logs). For more information on how to write Log
-Analytics querys, review the [Log Analytics tutortial](https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-tutorial)
+Once the results have been published to the Log Analytics workspace,
+they can be queried by executing results against the `PSRule_CL` table (under Custom Logs).
+For more information on how to write Log Analytics querys, review the [Log Analytics tutortial][11].
+
+  [11]: https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-tutorial
+
+*[SIEM]: security information event management

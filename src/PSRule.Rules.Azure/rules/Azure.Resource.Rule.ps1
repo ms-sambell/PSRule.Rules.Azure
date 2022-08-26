@@ -35,12 +35,11 @@ Rule 'Azure.ResourceGroup.Name' -Ref 'AZR-000168' -Type 'Microsoft.Resources/res
     $Assert.Match($PSRule, 'TargetName', '^[-\w\._\(\)]*[-\w_\(\)]$');
 }
 
-
 # Synopsis: Ensure all properties named used for setting a username within a deployment are expressions (e.g. an ARM function not a string)
 Rule 'Azure.Resource.adminUsername' -Ref 'AZR-000284' -Type 'Microsoft.Resources/deployments' -Tag @{ release = 'GA'; ruleSet = '2022_09' } {  
     $deploymentTemplate = @($TargetObject.properties.template);
 
-    if (($deploymentTemplate.resources).Length -eq 0 ) {
+    if (($deploymentTemplate.resources).Length -eq 0) {
         return $Assert.Pass();
     } else {
         foreach ($resource in $deploymentTemplate.resources.properties) {
@@ -56,26 +55,26 @@ function global:FindAdminUsername {
     foreach ($property in $InputObject.PSObject.properties) {
         ## Loop again if the property is a nested object
         if($property.Value.GetType().Name -eq 'PSCustomObject') {
-            foreach($nestedProperty in $property.Value.PSObject.Properties ){
+            foreach($nestedProperty in $property.Value.PSObject.Properties){
                 global:CheckSensitiveProperties -InputObject $nestedProperty
             }
         } elseif ($property.value.GetType().Name -eq 'String') {
             global:CheckSensitiveProperties -InputObject $property
-        } 
+        }
       }
     }
-  }
+}
 
-  function global:CheckSensitiveProperties {
+function global:CheckSensitiveProperties {
     param (
         [PSObject]$InputObject
         )
     process {
         if ($Configuration.GetStringValues('AZURE_TEMPLATE_SENSITIVE_PROPERTY_NAMES') -contains $InputObject.Name) {
             $cleanValue = [PSRule.Rules.Azure.Runtime.Helper]::CompressExpression($InputObject.Value);
-            $Assert.Match($cleanValue, '.', '\[[^\]]+\]')   
+            $Assert.Match($cleanValue, '.', '\[[^\]]+\]')
         } else {
             $Assert.Pass()
         }
     }
-  }
+}

@@ -38,7 +38,7 @@ What's changed since pre-release v1.19.0-B0010:
     [#1582](https://github.com/Azure/PSRule.Rules.Azure/issues/1582)
 - New rules:
   - Azure Resources:
-    - Check that nested deployments securely pass through administrator usernames @ms-sambell.
+    - Check that nested deployments securely pass through administrator usernames by @ms-sambell.
       [#1479](https://github.com/Azure/PSRule.Rules.Azure/issues/1479)
 
 ## v1.19.0-B0010 (pre-release)
