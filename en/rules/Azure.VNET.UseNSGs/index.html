@@ -1780,6 +1780,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_4">
@@ -3116,6 +3120,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../Azure.CDN.UseFrontDoor/" class="md-nav__link">
+        Azure.CDN.UseFrontDoor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Azure.Cognitive.DisableLocalAuth/" class="md-nav__link">
         Azure.Cognitive.DisableLocalAuth
       </a>
@@ -3216,6 +3234,20 @@
     <li class="md-nav__item">
       <a href="../Azure.DataFactory.Version/" class="md-nav__link">
         Azure.DataFactory.Version
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.Deployment.AdminUsername/" class="md-nav__link">
+        Azure.Deployment.AdminUsername
       </a>
     </li>
   
@@ -6424,6 +6456,8 @@ These subnets are:</p>
 <li><code>GatewaySubnet</code> - used for hybrid connectivity with VPN and ExpressRoute gateways.</li>
 <li><code>AzureFirewallSubnet</code> and <code>AzureFirewallManagementSubnet</code> - are for Azure Firewall.
   Azure Firewall includes an intrinsic NSG that is not directly manageable or visible.</li>
+<li><code>RouteServerSubnet</code> - used by managed routing provided by Azure Route Server.</li>
+<li>Any subnet delegated to a dedicated HSM with <code>Microsoft.HardwareSecurityModules/dedicatedHSMs</code>.</li>
 </ul>
 <h2 id="recommendation">Recommendation<a class="headerlink" href="#recommendation" title="Permanent link">#</a></h2>
 <p>For virtual network subnets, ensure that a network security groups (NSGs) are assigned.</p>
@@ -6529,7 +6563,9 @@ These subnets are:</p>
 <li><a href="https://docs.microsoft.com/azure/security/fundamentals/network-best-practices#logically-segment-subnets">Network Security Best Practices</a></li>
 <li><a href="https://docs.microsoft.com/azure/firewall/firewall-faq#are-network-security-groups-nsgs-supported-on-the-azure-firewall-subnet">Azure Firewall FAQ</a></li>
 <li><a href="https://docs.microsoft.com/azure/firewall/forced-tunneling#forced-tunneling-configuration">Forced tunneling configuration</a></li>
-<li><a href="https://docs.microsoft.com/azure/templates/microsoft.network/virtualnetworks?tabs=json">Azure template reference</a></li>
+<li><a href="https://docs.microsoft.com/azure/route-server/route-server-faq#can-i-associate-a-network-security-group-nsg-to-the-routeserversubnet">Azure Route Server FAQ</a></li>
+<li><a href="https://docs.microsoft.com/azure/dedicated-hsm/networking#subnets">Azure Dedicated HSM networking</a></li>
+<li><a href="https://docs.microsoft.com/azure/templates/microsoft.network/virtualnetworks">Azure deployment reference</a></li>
 </ul>
 
   <!-- Last update of source file -->
@@ -6540,7 +6576,7 @@ These subnets are:</p>
   <small>
     
       Last update:
-      2021-08-13
+      2022-09-04
     
   </small>
 </div>
