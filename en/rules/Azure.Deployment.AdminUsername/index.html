@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The adminUsername or administratorUsername property should not be a string literal in nested templates.">
+        <meta name="description" content="Use secure parameters for sensitive resource properties.">
       
       
         <meta name="author" content="Microsoft">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Deployment.AdminUsername/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7a952b86.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -76,19 +76,19 @@
   <meta property="og:site_name" content="PSRule for Azure" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule for Azure - Azure.Deployment.AdminUsername" />
-  <meta property="og:description" content="The adminUsername or administratorUsername property should not be a string literal in nested templates." />
+  <meta property="og:description" content="Use secure parameters for sensitive resource properties." />
   <meta property="og:url" content="https://azure.github.io/PSRule.Rules.Azure/en/rules/Azure.Deployment.AdminUsername/" />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/184154668/58818c00-d496-11eb-9b77-016145022654" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1280" />
   <meta property="og:image:height" content="640" />
-  <meta property="og:image:alt" content="The adminUsername or administratorUsername property should not be a string literal in nested templates." />
+  <meta property="og:image:alt" content="Use secure parameters for sensitive resource properties." />
 
   <!-- Twitter meta tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@github" />
   <meta name="twitter:title" content="PSRule for Azure - Azure.Deployment.AdminUsername" />
-  <meta name="twitter:description" content="The adminUsername or administratorUsername property should not be a string literal in nested templates." />
+  <meta name="twitter:description" content="Use secure parameters for sensitive resource properties." />
   <meta name="twitter:image" content="https://repository-images.githubusercontent.com/184154668/58818c00-d496-11eb-9b77-016145022654" />
 
 
@@ -821,10 +821,75 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../license-contributing/">License and contributing</a>
+          
+            <label for="__nav_2_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="License and contributing" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          License and contributing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../license-contributing/" class="md-nav__link">
-        License and contributing
+      <a href="../../../license-contributing/writing-documentation/" class="md-nav__link">
+        Writing documentation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license-contributing/hackathons/" class="md-nav__link">
+        Past hackathons
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1834,6 +1899,64 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -1968,6 +2091,20 @@
     <li class="md-nav__item">
       <a href="../Azure.ACR.Retention/" class="md-nav__link">
         Azure.ACR.Retention
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.ACR.SoftDelete/" class="md-nav__link">
+        Azure.ACR.SoftDelete
       </a>
     </li>
   
@@ -2680,6 +2817,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../Azure.AppConfig.AuditLogs/" class="md-nav__link">
+        Azure.AppConfig.AuditLogs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Azure.AppConfig.DisableLocalAuth/" class="md-nav__link">
         Azure.AppConfig.DisableLocalAuth
       </a>
@@ -2694,8 +2845,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../Azure.AppConfig.GeoReplica/" class="md-nav__link">
+        Azure.AppConfig.GeoReplica
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Azure.AppConfig.Name/" class="md-nav__link">
         Azure.AppConfig.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppConfig.PurgeProtect/" class="md-nav__link">
+        Azure.AppConfig.PurgeProtect
       </a>
     </li>
   
@@ -2850,6 +3029,62 @@
     <li class="md-nav__item">
       <a href="../Azure.AppGw.WAFRules/" class="md-nav__link">
         Azure.AppGw.WAFRules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppGwWAF.Enabled/" class="md-nav__link">
+        Azure.AppGwWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppGwWAF.Exclusions/" class="md-nav__link">
+        Azure.AppGwWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppGwWAF.PreventionMode/" class="md-nav__link">
+        Azure.AppGwWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppGwWAF.RuleGroups/" class="md-nav__link">
+        Azure.AppGwWAF.RuleGroups
       </a>
     </li>
   
@@ -3324,6 +3559,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../Azure.Defender.AppServices/" class="md-nav__link">
+        Azure.Defender.AppServices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.Defender.Containers/" class="md-nav__link">
+        Azure.Defender.Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.Defender.SQL/" class="md-nav__link">
+        Azure.Defender.SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.Defender.SQLOnVM/" class="md-nav__link">
+        Azure.Defender.SQLOnVM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.Defender.Servers/" class="md-nav__link">
+        Azure.Defender.Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.Defender.Storage/" class="md-nav__link">
+        Azure.Defender.Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Azure.DefenderCloud.Contact/" class="md-nav__link">
         Azure.DefenderCloud.Contact
       </a>
@@ -3395,6 +3714,40 @@
         <li class="md-nav__item">
   <a href="#recommendation" class="md-nav__link">
     Recommendation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-with-azure-template" class="md-nav__link">
+    Configure with Azure template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-with-bicep" class="md-nav__link">
+    Configure with Bicep
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
   </a>
   
 </li>
@@ -3689,6 +4042,62 @@
     <li class="md-nav__item">
       <a href="../Azure.FrontDoor.WAF.Name/" class="md-nav__link">
         Azure.FrontDoor.WAF.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.FrontDoorWAF.Enabled/" class="md-nav__link">
+        Azure.FrontDoorWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.FrontDoorWAF.Exclusions/" class="md-nav__link">
+        Azure.FrontDoorWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.FrontDoorWAF.PreventionMode/" class="md-nav__link">
+        Azure.FrontDoorWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.FrontDoorWAF.RuleGroups/" class="md-nav__link">
+        Azure.FrontDoorWAF.RuleGroups
       </a>
     </li>
   
@@ -4529,6 +4938,20 @@
     <li class="md-nav__item">
       <a href="../Azure.Redis.PublicNetworkAccess/" class="md-nav__link">
         Azure.Redis.PublicNetworkAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.RedisEnterprise.MinTLS/" class="md-nav__link">
+        Azure.RedisEnterprise.MinTLS
       </a>
     </li>
   
@@ -6019,6 +6442,146 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.AdminUser/" class="md-nav__link">
+        Azure.ACR.AdminUser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.ContainerScan/" class="md-nav__link">
+        Azure.ACR.ContainerScan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.ContentTrust/" class="md-nav__link">
+        Azure.ACR.ContentTrust
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.GeoReplica/" class="md-nav__link">
+        Azure.ACR.GeoReplica
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.ImageHealth/" class="md-nav__link">
+        Azure.ACR.ImageHealth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.MinSku/" class="md-nav__link">
+        Azure.ACR.MinSku
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.Name/" class="md-nav__link">
+        Azure.ACR.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.Quarantine/" class="md-nav__link">
+        Azure.ACR.Quarantine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.Retention/" class="md-nav__link">
+        Azure.ACR.Retention
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../es/rules/Azure.ACR.Usage/" class="md-nav__link">
+        Azure.ACR.Usage
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -6039,6 +6602,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -6246,6 +6813,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../baselines/Azure.GA_2022_09/" class="md-nav__link">
+        Azure.GA_2022_09
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../baselines/Azure.Preview/" class="md-nav__link">
         Azure.Preview
       </a>
@@ -6304,6 +6885,20 @@
     <li class="md-nav__item">
       <a href="../../baselines/Azure.Preview_2022_06/" class="md-nav__link">
         Azure.Preview_2022_06
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../baselines/Azure.Preview_2022_09/" class="md-nav__link">
+        Azure.Preview_2022_09
       </a>
     </li>
   
@@ -6479,6 +7074,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-with-azure-template" class="md-nav__link">
+    Configure with Azure template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-with-bicep" class="md-nav__link">
+    Configure with Bicep
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     Links
   </a>
@@ -6524,12 +7153,132 @@
 <p><a href="../module/#security"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M1.527 13.237a1.75 1.75 0 0 1 0-2.474l9.272-9.273a1.75 1.75 0 0 1 2.475 0l9.272 9.273a1.75 1.75 0 0 1 0 2.474l-9.272 9.272a1.75 1.75 0 0 1-2.475 0l-9.272-9.272zm1.06-1.414a.25.25 0 0 0 0 .354l9.273 9.272a.25.25 0 0 0 .353 0l9.272-9.272a.25.25 0 0 0 0-.354l-9.272-9.272a.25.25 0 0 0-.353 0l-9.273 9.272z"/></svg></span> Security</a>
  · <a href="../resource/#deployment"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.276 2.276 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003a2.276 2.276 0 0 1-2.284 0l-.026-.015-6.503-4.502a2.268 2.268 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026a2.28 2.28 0 0 1 .82-.827h.002L13.152.681zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.776.776 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003zM18 9.709l-3.25 1.9v7.548L18 17.245V9.709zm1.5-.878v7.532l2.124-1.25a.777.777 0 0 0 .387-.671V7.363L19.5 8.831zm-9.09 5.316 2.84-1.66v7.552l-3.233 1.902v-7.612c.134-.047.265-.107.391-.18l.002-.002zm-1.893 7.754V14.33a2.277 2.277 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232z"/></svg></span> Deployment</a>
  · <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25-8.44 8.44L2.5 10.94V2.5z"/></svg></span> 2022_09</p>
-<p>The adminUsername or administratorUsername property should not be a string literal in nested templates.</p>
+<p>Use secure parameters for sensitive resource properties.</p>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">#</a></h2>
-<p>In nested deployments a resource can have the adminUsername property set to a string literal value.
-This means that the value is passed through insecurely and is a security risk.</p>
+<p>Resource properties can be configured using a hardcoded value or Azure Bicep/ template expressions.
+When specifing sensitive values use <em>secure</em> parameters such as <code>secureString</code> or <code>secureObject</code>.</p>
+<p>Sensitive values that use deterministic expressions such as hardcodes string literals or variables are not secure.</p>
 <h2 id="recommendation">Recommendation<a class="headerlink" href="#recommendation" title="Permanent link">#</a></h2>
-<p>Sensitive properties for nested deployments should be set by a secureString parameter.</p>
+<p>Sensitive properties should be passed as parameters.
+Avoid using deterministic values for sensitive properties.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
+<h3 id="configure-with-azure-template">Configure with Azure template<a class="headerlink" href="#configure-with-azure-template" title="Permanent link">#</a></h3>
+<p>To deploy resources that pass this rule:</p>
+<ul>
+<li>Use parameters to specify sensitive properties.</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.Compute/virtualMachines&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;apiVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-03-01&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;name&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;location&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;zones&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;1&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;hardwareProfile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;vmSize&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Standard_D2s_v3&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;osProfile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;computerName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;name&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;adminUsername&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;adminUsername&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;adminPassword&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;adminPassword&#39;)]&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;storageProfile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;imageReference&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;publisher&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MicrosoftWindowsServer&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;offer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WindowsServer&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[parameters(&#39;sku&#39;)]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;latest&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">},</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;osDisk&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[format(&#39;{0}-disk0&#39;, parameters(&#39;name&#39;))]&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;caching&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReadWrite&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;createOption&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FromImage&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;managedDisk&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;storageAccountType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Premium_LRS&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;licenseType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Windows_Server&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;networkProfile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;networkInterfaces&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[resourceId(&#39;Microsoft.Network/networkInterfaces&#39;, format(&#39;{0}-nic0&#39;, parameters(&#39;name&#39;)))]&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;dependsOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;[resourceId(&#39;Microsoft.Network/networkInterfaces&#39;, format(&#39;{0}-nic0&#39;, parameters(&#39;name&#39;)))]&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="configure-with-bicep">Configure with Bicep<a class="headerlink" href="#configure-with-bicep" title="Permanent link">#</a></h3>
+<p>To deploy resources that pass this rule:</p>
+<ul>
+<li>steps</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code>@secure()
+@description(&#39;The name of the local administrator account.&#39;)
+param adminUsername string
+
+@secure()
+@description(&#39;A password for the local administrator account.&#39;)
+param adminPassword string
+
+resource vm1 &#39;Microsoft.Compute/virtualMachines@2022-03-01&#39; = {
+  name: name
+  location: location
+  zones: [
+    &#39;1&#39;
+  ]
+  properties: {
+    hardwareProfile: {
+      vmSize: &#39;Standard_D2s_v3&#39;
+    }
+    osProfile: {
+      computerName: name
+      adminUsername: adminUsername
+      adminPassword: adminPassword
+    }
+    storageProfile: {
+      imageReference: {
+        publisher: &#39;MicrosoftWindowsServer&#39;
+        offer: &#39;WindowsServer&#39;
+        sku: sku
+        version: &#39;latest&#39;
+      }
+      osDisk: {
+        name: &#39;${name}-disk0&#39;
+        caching: &#39;ReadWrite&#39;
+        createOption: &#39;FromImage&#39;
+        managedDisk: {
+          storageAccountType: &#39;Premium_LRS&#39;
+        }
+      }
+    }
+    licenseType: &#39;Windows_Server&#39;
+    networkProfile: {
+      networkInterfaces: [
+        {
+          id: nic.id
+        }
+      ]
+    }
+  }
+}
+</code></pre></div>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">#</a></h2>
+<p>Configure <code>AZURE_DEPLOYMENT_SENSITIVE_PROPERTY_NAMES</code> to specify sensitive property names.
+By default the following values are used:</p>
+<ul>
+<li><code>adminUsername</code></li>
+<li><code>administratorLogin</code></li>
+<li><code>administratorLoginPassword</code></li>
+</ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="https://docs.microsoft.com/azure/architecture/framework/security/deploy-infrastructure">Infrastructure provisioning considerations in Azure</a></li>
@@ -6545,7 +7294,7 @@ This means that the value is passed through insecurely and is a security risk.</
   <small>
     
       Last update:
-      2022-09-13
+      2022-10-06
     
   </small>
 </div>
@@ -6661,7 +7410,7 @@ This means that the value is passed through insecurely and is a security risk.</
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.37e9125f.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.078830c0.min.js"></script>
       
     
   </body>
