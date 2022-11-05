@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/es/rules/resource/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -1949,6 +1949,18 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -2783,6 +2795,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.APIM.SampleProducts/" class="md-nav__link">
         Azure.APIM.SampleProducts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.ASE.MigrateV3/" class="md-nav__link">
+        Azure.ASE.MigrateV3
       </a>
     </li>
   
@@ -3679,6 +3705,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.Deployment.OutputSecretValue/" class="md-nav__link">
         Azure.Deployment.OutputSecretValue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Deployment.SecureValue/" class="md-nav__link">
+        Azure.Deployment.SecureValue
       </a>
     </li>
   
@@ -5189,6 +5229,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.ServiceBus.MinTLS/" class="md-nav__link">
+        Azure.ServiceBus.MinTLS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.ServiceBus.Usage/" class="md-nav__link">
         Azure.ServiceBus.Usage
       </a>
@@ -5931,6 +5985,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.VM.MigrateAMA/" class="md-nav__link">
+        Azure.VM.MigrateAMA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.VM.NICAttached/" class="md-nav__link">
         Azure.VM.NICAttached
       </a>
@@ -6099,6 +6167,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.VMSS.MigrateAMA/" class="md-nav__link">
+        Azure.VMSS.MigrateAMA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.VMSS.Name/" class="md-nav__link">
         Azure.VMSS.Name
       </a>
@@ -6115,6 +6197,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.VMSS.PublicKey/" class="md-nav__link">
         Azure.VMSS.PublicKey
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.VNET.BastionSubnet/" class="md-nav__link">
+        Azure.VNET.BastionSubnet
       </a>
     </li>
   
@@ -6991,6 +7087,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#app-service-environment" class="md-nav__link">
+    App Service Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#application-gateway" class="md-nav__link">
     Application Gateway
   </a>
@@ -7779,6 +7882,25 @@
 <tr>
 <td><a href="Azure.AppService.WebSecureFtp.md">Azure.AppService.WebSecureFtp</a></td>
 <td>Web apps should disable insecure FTP and configure SFTP when required.</td>
+<td>Important</td>
+<td>Error</td>
+</tr>
+</tbody>
+</table>
+<h2 id="app-service-environment">App Service Environment<a class="headerlink" href="#app-service-environment" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Synopsis</th>
+<th>Severity</th>
+<th>Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Azure.ASE.MigrateV3.md">Azure.ASE.MigrateV3</a></td>
+<td>Use ASEv3 as replacement for the classic app service environment versions ASEv1 and ASEv2.</td>
 <td>Important</td>
 <td>Error</td>
 </tr>
@@ -8696,6 +8818,12 @@
 <td>Critical</td>
 <td>Error</td>
 </tr>
+<tr>
+<td><a href="Azure.Deployment.SecureValue.md">Azure.Deployment.SecureValue</a></td>
+<td>Use secure parameters for setting properties of resources that contain sensitive information.</td>
+<td>Critical</td>
+<td>Error</td>
+</tr>
 </tbody>
 </table>
 <h2 id="event-grid">Event Grid<a class="headerlink" href="#event-grid" title="Permanent link">#</a></h2>
@@ -9301,6 +9429,12 @@
 <td>Error</td>
 </tr>
 <tr>
+<td><a href="Azure.ServiceBus.MinTLS.md">Azure.ServiceBus.MinTLS</a></td>
+<td>Enforce namespaces to require that clients send and receive data with TLS 1.2 version.</td>
+<td>Important</td>
+<td>Error</td>
+</tr>
+<tr>
 <td><a href="Azure.ServiceBus.Usage.md">Azure.ServiceBus.Usage</a></td>
 <td>Regularly remove unused resources to reduce costs.</td>
 <td>Important</td>
@@ -9706,6 +9840,12 @@
 <td>Error</td>
 </tr>
 <tr>
+<td><a href="Azure.VM.MigrateAMA.md">Azure.VM.MigrateAMA</a></td>
+<td>Use Azure Monitor Agent as replacement for Log Analytics Agent.</td>
+<td>Important</td>
+<td>Error</td>
+</tr>
+<tr>
 <td><a href="Azure.VM.Name.md">Azure.VM.Name</a></td>
 <td>Virtual Machine (VM) names should meet naming requirements.</td>
 <td>Awareness</td>
@@ -9791,6 +9931,12 @@
 <td>Error</td>
 </tr>
 <tr>
+<td><a href="Azure.VMSS.MigrateAMA.md">Azure.VMSS.MigrateAMA</a></td>
+<td>Use Azure Monitor Agent as replacement for Log Analytics Agent.</td>
+<td>Important</td>
+<td>Error</td>
+</tr>
+<tr>
 <td><a href="Azure.VMSS.Name.md">Azure.VMSS.Name</a></td>
 <td>Virtual Machine Scale Set (VMSS) names should meet naming requirements.</td>
 <td>Awareness</td>
@@ -9809,6 +9955,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="Azure.VNET.BastionSubnet.md">Azure.VNET.BastionSubnet</a></td>
+<td>VNETs with a GatewaySubnet should have an AzureBastionSubnet to allow for out of band remote access to VMs.</td>
+<td>Important</td>
+<td>Error</td>
+</tr>
 <tr>
 <td><a href="Azure.VNET.LocalDNS.md">Azure.VNET.LocalDNS</a></td>
 <td>Virtual networks (VNETs) should use Azure local DNS servers.</td>
@@ -9955,7 +10107,7 @@
   <small>
     
       Last update:
-      2022-10-03
+      2022-11-01
     
   </small>
 </div>
@@ -10011,10 +10163,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>
