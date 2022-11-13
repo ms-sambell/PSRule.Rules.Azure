@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/CHANGELOG-v1/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.9">
     
     
       
@@ -26,7 +26,7 @@
       <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.08040f6c.min.css">
         
           
           
@@ -98,7 +98,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
   
     
     
@@ -1021,6 +1021,27 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1220-b0026-pre-release" class="md-nav__link">
+    v1.22.0-B0026 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1220-b0011-pre-release" class="md-nav__link">
+    v1.22.0-B0011 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1212" class="md-nav__link">
+    v1.21.2
   </a>
   
 </li>
@@ -3046,6 +3067,14 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -3782,6 +3811,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.APIM.ManagedIdentity/" class="md-nav__link">
         Azure.APIM.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.APIM.MinAPIVersion/" class="md-nav__link">
+        Azure.APIM.MinAPIVersion
       </a>
     </li>
   
@@ -5026,6 +5069,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoor.UseCaching/" class="md-nav__link">
+        Azure.FrontDoor.UseCaching
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.FrontDoor.UseWAF/" class="md-nav__link">
         Azure.FrontDoor.UseWAF
       </a>
@@ -5378,6 +5435,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.MySQL.FirewallRuleCount/" class="md-nav__link">
         Azure.MySQL.FirewallRuleCount
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.MySQL.GeoRedundantBackup/" class="md-nav__link">
+        Azure.MySQL.GeoRedundantBackup
       </a>
     </li>
   
@@ -7308,6 +7379,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.VNET.FirewallSubnet/" class="md-nav__link">
+        Azure.VNET.FirewallSubnet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.VNET.LocalDNS/" class="md-nav__link">
         Azure.VNET.LocalDNS
       </a>
@@ -8146,6 +8231,27 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1220-b0026-pre-release" class="md-nav__link">
+    v1.22.0-B0026 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1220-b0011-pre-release" class="md-nav__link">
+    v1.22.0-B0011 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1212" class="md-nav__link">
+    v1.21.2
   </a>
   
 </li>
@@ -9226,14 +9332,70 @@
   See <a href="../upgrade-notes/">upgrade notes</a> for more information.</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<ul>
+<li>New rules:<ul>
+<li>Azure Database for MySQL:<ul>
+<li>Check Azure Database for MySQL servers have geo-redundant backup configured by <a href="https://github.com/bengeset96">@bengeset96</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/284">#284</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v1220-b0026-pre-release">v1.22.0-B0026 (pre-release)<a class="headerlink" href="#v1220-b0026-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.22.0-B0011:</p>
+<ul>
+<li>New rules:<ul>
+<li>API Management:<ul>
+<li>Check api management instances limits control plane API calls to apim with version <code>'2021-08-01'</code> or newer by <a href="https://github.com/bengeset96">@bengeset96</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1819">#1819</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Az.Resources to v6.4.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1829">#1829</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed non-Linux VM images flagged as Linux by <a href="https://github.com/BernieWhite">@BernieWhite</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1825">#1825</a></li>
+<li>Fixed failed to expand with last function on runtime property by <a href="https://github.com/BernieWhite">@BernieWhite</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1830">#1830</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1220-b0011-pre-release">v1.22.0-B0011 (pre-release)<a class="headerlink" href="#v1220-b0011-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.21.0:</p>
 <ul>
 <li>New rules:<ul>
 <li>App Service Environment:<ul>
 <li>Check app service environments uses version 3 (ASEv3) instead of classic version 1 (ASEv1) and version 2 (ASEv2) by <a href="https://github.com/bengeset96">@bengeset96</a>.
-<a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1805">#1805</a></li>
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1805">#1805</a></li>
 </ul>
 </li>
+<li>Front Door:<ul>
+<li>Check front door uses caching by <a href="https://github.com/bengeset96">@bengeset96</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/548">#548</a></li>
+</ul>
+</li>
+<li>Virtual Network:<ul>
+<li>Check VNETs with a GatewaySubnet also has an AzureFirewallSubnet by <a href="https://github.com/BernieWhite">@BernieWhite</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/875">#875</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v1212">v1.21.2<a class="headerlink" href="#v1212" title="Permanent link">#</a></h2>
+<p>What's changed since v1.21.1:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed non-Linux VM images flagged as Linux by <a href="https://github.com/BernieWhite">@BernieWhite</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1825">#1825</a></li>
+<li>Fixed failed to expand with last function on runtime property by <a href="https://github.com/BernieWhite">@BernieWhite</a>.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1830">#1830</a></li>
 </ul>
 </li>
 </ul>
@@ -12844,7 +13006,7 @@
   <small>
     
       Last update:
-      2022-11-01
+      2022-11-10
     
   </small>
 </div>
@@ -12943,7 +13105,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
   </body>
